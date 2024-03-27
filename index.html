@@ -15,18 +15,22 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="P_styles.css" />
   </head>
   <body>
     <header>
-      <!-- <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav> -->
+      <nav role='navigation'>
+        <a data-page="home" class="active" href="#">Portfolio</a>
+        <a data-page="about" href="#">Experience</a>
+        <a data-page="clients" href="#">Projects</a>
+        <a data-page="contact" href="#">Contact Us</a>
+      </nav>
     </header>
 
     <main>
@@ -38,7 +42,7 @@
 
       <div class="container">
         <section id="home">
-          <h1>Welcome to My Portfolio</h1>
+          <h2>Welcome to My Portfolio</h2>
 
           <h2>About Me</h2>
 
@@ -62,50 +66,93 @@
           </p>
         </section>
 
-        <section id="projects">
-          <h2>Projects</h2>
+        <section id="about">
+          <h2>Education</h2>
           
-          <div class="exp">
+          <h3>Gujarat power engineering and RESEARCH institute</h3>
+          <h5>B.E. in Computer ( 9.6 SPI – 8.54 CGPA )</h5>
+          <h6>2017-2021</h6>
+        </section>
+
+        <section id="projects">
+          <h2>experience</h2>
+
+          <!-- <div class="exp"> -->
             <div class="exp1">
+              <h3>Software Developer</h3>
+              <h6>Sept 2021 - July 2023</h6>
+              <h6>iBase-t</h6>
               <ul>
-                <li>
-                  <h2>2  years</h2>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
-                  iure, accusamus eum sequi molestias ab similique maxime odit
-                  suscipit qui ex a cumque tempore, sint, aut reprehenderit
-                  consequuntur nisi fuga!
-                </li>
-                <li>item 1</li>
-                <li>item 1</li>
-                <li>item 1</li>
-                <li>item 1</li>
+
+                <li> Front end user interfaces for serval complex web applications with html , css and javascript.</li>
+                <li> Utilized react, redux framworks to create interactive, responsive and user-friendly web designs.</li>
+                <li> 	Collaborated with team members and back end developers to ensure web applications met customer requirements.</li>
+                <li> Built reusable code and libraries for future use in Product.</li>
+                <li> Learnt Jest For testing components in website</li>
+        
               </ul>
-            </div>
-            <div class="exp2">
-              <div class="namm">abc</div>
-              <div class="progress">
-                <div class="progress-value1"></div>
+
+              <h3>Intern as Java developer</h3>
+              <h6>Sept 2021 - Des 2021</h6>
+              <h6>iBase-t</h6>
+              <ul>
+                <li>Translated UI/UX Design Wireframes to actual code, Also learnt React, Redux, SQL Database, Bootstrap</li>
+                <li>Also learned some frameworks, technologies for developing web applications</li>
               </div>
-              <div class="namm">abc</div>
-              <div class="progress">
-                <div class="progress-value2"></div>
+
+          <!-- </div> -->
+        </section>
+
+        <section class="skills">
+
+          <h2>Skills</h2>
+
+          <div class="exp2">
+            <div class="exp">
+              <div class="oneskill">
+                <div class="namm">React</div>
+                <div class="progress">
+                  <div class="progress-value1"></div>
+                </div>
+                <div class="namm">Redux</div>
+                <div class="progress">
+                  <div class="progress-value2"></div>
+                </div>
+                <div class="namm">Css</div>
+                <div class="progress">
+                  <div class="progress-value3"></div>
+                </div>
+                <div class="namm">Html</div>
+                <div class="progress">
+                  <div class="progress-value4"></div>
+                </div>
               </div>
-              <div class="namm">abc</div>
-              <div class="progress">
-                <div class="progress-value3"></div>
-              </div>
-              <div class="namm">abc</div>
-              <div class="progress">
-                <div class="progress-value4"></div>
+              <div class="twoskill">
+                <div class="namm">Javascript</div>
+                <div class="progress">
+                  <div class="progress-value1"></div>
+                </div>
+                <div class="namm">Selenium / Jest</div>
+                <div class="progress">
+                  <div class="progress-value2"></div>
+                </div>
+                <div class="namm">Bootstrap</div>
+                <div class="progress">
+                  <div class="progress-value3"></div>
+                </div>
+                <div class="namm">Mongodb</div>
+                <div class="progress">
+                  <div class="progress-value4"></div>
+                </div>
               </div>
             </div>
           </div>
-
         </section>
-
         <section id="contact">
           <h2>Contact Me</h2>
-          <!-- Your contact form or information here -->
+
+          <h2 class="number">7990665571 - ajbalani593@gmail.com</h2>
+          
         </section>
       </div>
     </main>
