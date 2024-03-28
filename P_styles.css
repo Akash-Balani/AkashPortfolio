@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Mea+Culpa&display=swap');
 
 *{
     margin: 0%;
@@ -12,122 +14,20 @@ body{
 
 /* navbar */
 
-ol, ul {
-  list-style: none;
-}
+/* Google Fonts Import Link */
 
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-caption, th, td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle;
-}
-
-q, blockquote {
-  quotes: none;
-}
-q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
-  content: none;
-}
-
-a img {
-  border: none;
-}
-
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
-  display: block;
-}
-
-strong {
+.navbaritems{
+height: 50px;
+  display: flex;
+  justify-content: space-around;
+  font-family: "Mea Culpa", cursive;
   font-weight: 600;
+  font-size: 200%;
+  font-style: normal;
 }
 
-h1 {
-  color: rgba(255, 255, 255, 0.9);
-  margin-top: 30vh;
-  font-weight: 100;
-  text-align: center;
-  font-size: 55px;
-  line-height: 1.5;
-  background: rgba(0, 0, 0, 0.1);
-  padding: 0px 0 20px 0;
-}
-h1 span {
-  font-weight: 400;
-  display: block;
-  font-size: 25%;
-}
-
-nav {
-  position: absolute;
-left: 50%;
-top:3%;
-transform: translate(-50%,-50%);
-}
-nav a {
-  width: 35%;
-  text-align: center;
-  padding: 25px 20px;
-  text-decoration: none;
-  margin: auto;
-  /* Magic! */
-  position: relative;
-  color: rgba(255, 255, 255, 0.3);
-  -moz-transition: all 0.3s linear;
-  -o-transition: all 0.3s linear;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-}
-nav a:hover, nav a.active {
-  color: #fff;
-}
-nav a:after {
-  content: "";
-  width: 8px;
-  height: 8px;
-  background: #fff;
-  display: inline-block;
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  margin-left: -4px;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  -moz-transform: scale(0, 0);
-  -ms-transform: scale(0, 0);
-  -webkit-transform: scale(0, 0);
-  transform: scale(0, 0);
-  -moz-transition: -moz-transform 0.3s cubic-bezier(0.61, 0, 0.405, 1.63);
-  -o-transition: -o-transform 0.3s cubic-bezier(0.61, 0, 0.405, 1.63);
-  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.61, 0, 0.405, 1.63);
-  transition: transform 0.3s cubic-bezier(0.61, 0, 0.405, 1.63);
-}
-nav a.active:after {
-  -moz-transform: scale(1, 1);
-  -ms-transform: scale(1, 1);
-  -webkit-transform: scale(1, 1);
-  transform: scale(1, 1);
-}
 
 /* name  */
-.portfolio{
-    position:absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    color: white;
-    font-family: "Dancing Script", cursive;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-size: 400%;
-    font-style: normal;
-}
 
 img{
     width: 100%;
@@ -141,7 +41,8 @@ h2{
     margin: 50px;
     display: flex;
     justify-content: center;
-    font-family: "Pacifico", cursive;
+    font-family: "Cutive Mono", monospace;
+    /* font-family: "Pacifico", cursive; */
 }
 .exp{
 padding: 10px;
@@ -160,6 +61,11 @@ width: 50%;
 
 .exp2{
     /* width: 50%; */
+}
+
+h6{
+  display: flex;
+  align-items: center;
 }
 
 ul{
@@ -207,6 +113,12 @@ ul{
     width: 200px;
   }
   
+  @media only screen and (max-width: 600px) {
+    .exp{
+      display: block;
+    }
+  }
+  
   .progress-value1 {
     animation: skill1 3s normal forwards;
     box-shadow: 0 10px 40px -10px #b75e5e;
@@ -242,23 +154,79 @@ ul{
     height: 10px;
     width: 0;
   }
+
+  .progress-value5 {
+    animation: skill5 3s normal forwards;
+    box-shadow: 0 10px 40px -10px #b75e5e;
+    border-radius: 100px;
+    background: #00d57c;
+    height: 10px;
+    width: 0;
+  }
+
+  .progress-value6 {
+    animation: skill6 3s normal forwards;
+    box-shadow: 0 10px 40px -10px #b75e5e;
+    border-radius: 100px;
+    background: #00d57c;
+    height: 10px;
+    width: 0;
+  }
+
+  .progress-value7 {
+    animation: skill7 3s normal forwards;
+    box-shadow: 0 10px 40px -10px #b75e5e;
+    border-radius: 100px;    
+    background: #00d57c;
+    height: 10px;
+    width: 0;
+  }
+
+  .progress-value8 {
+    animation: skill8 10s normal forwards;
+    box-shadow: 0 10px 40px -10px #ffffff;
+    border-radius: 100px;
+    background: #00d57c;
+    height: 10px;
+    width: 0;
+  }
   
   @keyframes skill1 {
     0% { width: 0; }
-    100% { width: 68%; }
+    100% { width: 95%; }
   }
 
   @keyframes skill2 {
     0% { width: 0; }
-    100% { width: 48%; }
+    100% { width: 85%; }
   }
 
   @keyframes skill3 {
     0% { width: 0; }
-    100% { width: 33%; }
+    100% { width: 90%; }
   }
 
   @keyframes skill4 {
     0% { width: 0; }
+    100% { width: 95%; }
+  }
+
+  @keyframes skill5 {
+    0% { width: 0; }
+    100% { width: 80%; }
+  }
+
+  @keyframes skill6 {
+    0% { width: 0; }
+    100% { width: 48%; }
+  }
+
+  @keyframes skill7 {
+    0% { width: 0; }
     100% { width: 93%; }
+  }
+  
+  @keyframes skill8 {
+    0% { width: 0; }
+    100% { width: 53%; }
   }
